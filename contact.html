@@ -28,13 +28,23 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="/assets/css/Contact.css">
   <!-- =======================================================
   * Template Name: Selecao - v4.8.0
   * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <!-- script file -->
+  
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+      emailjs.init("qnQnYigOwyFcbmbe-");
+  })();
+</script>
 </head>
 
 <body>
@@ -96,6 +106,25 @@
       <div class="container"> </div>
 		 <section id="about" class="about">
       <div class="container">
+        <!-- form for contacting us -->
+        <div class="form">
+          <h3>Name</h3>
+          <input class="input-name" id="input-name" type="text">
+          <br>
+          <br>
+          <h3>Phone number</h3>
+          <input class="input-number" id="mobile_num" type="number">
+          <br>
+          <br>
+          <h3>Email</h3>
+          <input id="inp-email" type="email">
+          <br><br>
+          <h3>What would you like to discuss</h3>
+          <textarea class="text" name="query" id="text" cols="70" rows="9" placeholder="Write your query"></textarea>
+          <br><br>
+          <button class="submit-btn" id="submit">Submit</button>
+          
+        </div>
 
         <div class="section-title" data-aos="zoom-out">
           <h2>Contact Us</h2>
