@@ -11,8 +11,22 @@
 }
 .text{
     padding: 0.8rem;
+    width: 60%;
+    
 }
 input{
     padding: 0.3rem;
     width: 15rem;
+}
+@media (max-width: 650px) {
+    /* … */
+    .text{
+        width: 90%;
+        height: 10rem;
+    }
+    input{
+        padding: 0.3rem;
+        width: 90%;
+    }
+
 }
